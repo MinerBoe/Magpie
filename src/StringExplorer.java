@@ -20,6 +20,15 @@ public class StringExplorer {
 
 		// Try other methods here:
 
+		int notFoundPsn = sample.indexOf("slow");
+		System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
+
+		int startFront = sample.indexOf("o", 0);
+		System.out.println("sample.indexOf(\"o\", 0) = " + startFront);
+
+		int startMiddle = sample.indexOf("o", 15);
+		System.out.println("sample.indexOf(\"o\", 15) = " + startMiddle);
+
 	}
 
 }
