@@ -9,14 +9,14 @@ import java.util.Random;
  * Will transform statements as well as react to keywords</li>
  * </ul>
  * This version uses an array to hold the default responses.
- * 
+ *
  * @author Laurie White
  * @version April 2012
  */
 public class Magpie5 {
 	/**
 	 * Get a default greeting
-	 * 
+	 *
 	 * @return a greeting
 	 */
 	public String getGreeting() {
@@ -25,7 +25,7 @@ public class Magpie5 {
 
 	/**
 	 * Gives a response to a user statement
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement
 	 * @return a response based on the rules given
@@ -81,7 +81,7 @@ public class Magpie5 {
 	/**
 	 * Take a statement with "I want to <something>." and transform it into
 	 * "What would it mean to <something>?"
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement, assumed to contain "I want to"
 	 * @return the transformed statement
@@ -101,7 +101,7 @@ public class Magpie5 {
 	/**
 	 * Take a statement with "I want <something>." and transform it into
 	 * "Would you really be happy if you had <something>?"
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement, assumed to contain "I want"
 	 * @return the transformed statement
@@ -121,7 +121,7 @@ public class Magpie5 {
 	/**
 	 * Take a statement with "you <something> me" and transform it into
 	 * "What makes you think that I <something> you?"
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement, assumed to contain "you" followed by "me"
 	 * @return the transformed statement
@@ -145,7 +145,7 @@ public class Magpie5 {
 	/**
 	 * Take a statement with "I <something> you" and transform it into
 	 * "Why do you <something> me?"
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement, assumed to contain "I" followed by "you"
 	 * @return the transformed statement
@@ -170,7 +170,7 @@ public class Magpie5 {
 	 * Search for one word in phrase. The search is not case sensitive. This
 	 * method will check that the given goal is not a substring of a longer
 	 * string (so, for example, "I know" does not contain "no").
-	 * 
+	 *
 	 * @param statement
 	 *            the string to search
 	 * @param goal
@@ -227,7 +227,7 @@ public class Magpie5 {
 	 * method will check that the given goal is not a substring of a longer
 	 * string (so, for example, "I know" does not contain "no"). The search
 	 * begins at the beginning of the string.
-	 * 
+	 *
 	 * @param statement
 	 *            the string to search
 	 * @param goal
@@ -241,7 +241,7 @@ public class Magpie5 {
 
 	/**
 	 * Pick a default response to use if nothing else fits.
-	 * 
+	 *
 	 * @return a non-committal string
 	 */
 	private String getRandomResponse() {
@@ -250,6 +250,6 @@ public class Magpie5 {
 	}
 
 	private String[] randomResponses = { "Interesting, tell me more", "Hmmm.",
-			"Do you really think so?", "You don't say." };
+			"Do you really think so?", "You don't say.", "If you say.", "That makes me wonder", "Ok.", "Cool!" };
 
 }
